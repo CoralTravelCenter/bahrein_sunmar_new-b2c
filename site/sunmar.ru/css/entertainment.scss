@@ -1,0 +1,193 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css';
+@import '../../common/css/_regular-mixins.scss';
+
+section.entertainments-section > article .contenu {
+	> p {
+		width: 36%;
+		margin-block: 1.25em;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	.card-container {
+		@include flex-grid(1em, 3, center);
+	}
+
+	h5 {
+		font-size: 1.3em;
+		color: #fff;
+	}
+
+	h5 + .picture {
+		width: 1.3em;
+		aspect-ratio: 1/1;
+	}
+}
+
+.entertainments-section .entertainments__card {
+	height: 100%;
+	position: relative;
+}
+
+.entertainments-section
+	.entertainments__card:hover
+	.entertainments__poster
+	img {
+	filter: blur(1.5rem);
+	transform: scale(1.2);
+}
+
+.entertainments-section .entertainments__card:hover .entertainments__details {
+	background-color: rgba(0, 0, 0, 0.4);
+
+	transform: translateY(0%);
+}
+
+.entertainments-section
+	.entertainments__card:hover
+	.entertainments__details
+	h3 {
+	margin-bottom: 16px;
+	margin: 0;
+}
+
+@media (max-width: 1370px) {
+	.entertainments-section .entertainments__card:hover .entertainments__details {
+		overflow-y: auto;
+	}
+}
+
+.entertainments-section
+	.entertainments__card:hover
+	.entertainments__details
+	.details-title
+	img {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.entertainments-section .entertainments__poster {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.entertainments-section .entertainments__poster:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	display: block;
+	left: 0;
+}
+
+.entertainments-section .entertainments__poster img {
+	max-width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 8px;
+	transition: filter 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.entertainments-section .entertainments__details {
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: 8px;
+	padding: 2em;
+	transition: -webkit-transform 0.3s 0.15s, -webkit-transform 0.3s 0.15s,
+		transform 0.3s 0.15s;
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	transform: translateY(calc(78% - 1em));
+}
+
+.entertainments-section .entertainments__details .details-title {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.entertainments-section .entertainments__details .details-title img {
+	margin-top: 0;
+	transition: -webkit-transform 0.35s ease-in-out,
+		-webkit-transform 0.35s ease-in-out, transform 0.35s ease-in-out;
+}
+
+.entertainments-section .entertainments__details p {
+	margin-top: 0;
+}
+
+.entertainments-section .entertainments__details h3,
+.entertainments-section .entertainments__details p {
+	color: #fff !important;
+}
+
+.entertainments-section .entertainments__details_sm {
+	transform: translateY(calc(100% - 6.6em));
+}
+
+.entertainments-section .entertainments__details_sm .details-title {
+	column-gap: 1em;
+}
+
+.entertainments-section .entertainments__details_sm .details-title h3 {
+	line-height: 1;
+}
+
+.entertainments-section .entertainments__details_lg {
+	transform: translateY(calc(100% - 4.6em));
+}
+
+.entertainments-section .entertainments__details_lg .details-title {
+	column-gap: 1em;
+}
+
+.entertainments-section .entertainments__details_lg .details-title h3 {
+	line-height: 1;
+}
+
+.entertainments-section .entertainments .entertainments-slides-wrapper {
+	margin-top: 45px;
+}
+
+.entertainments-section
+	.entertainments
+	.entertainments-slides-wrapper
+	.swiper-slide {
+	border-radius: 8px;
+}
+
+.entertainments__details {
+	scrollbar-width: thin;
+	scrollbar-color: #bcbcbc #656565;
+}
+
+.entertainments__details::-webkit-scrollbar {
+	width: 12px;
+}
+
+.entertainments__details::-webkit-scrollbar-track {
+	background: #bcbcbc;
+}
+
+.entertainments__details::-webkit-scrollbar-thumb {
+	background-color: #656565;
+	border: 1px solid #656565;
+	border-radius: 20px;
+}

@@ -1,0 +1,6 @@
+/node_modules/
+/@CMC/
+/.parcel-cache/
+/dev/
+/prod/
+.DS_Store

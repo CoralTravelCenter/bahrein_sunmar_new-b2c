@@ -1,0 +1,28 @@
+@import '../../common/css/_regular-mixins.scss';
+
+section.culture-section > article .contenu {
+	.culture {
+		@include flex-grid(1em, 5, center);
+
+		@media (max-width: 768px) {
+			@include flex-grid(1em, 1, center);
+		}
+
+		&__col {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+
+			figure {
+				display: flex;
+				flex-direction: column;
+				gap: 1em;
+
+				img {
+					min-height: 170px;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}

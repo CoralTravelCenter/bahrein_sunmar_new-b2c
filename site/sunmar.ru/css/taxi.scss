@@ -1,0 +1,58 @@
+section.taxi-section .taxi .taxi__banner {
+	margin-bottom: 24px;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+	section.taxi-section .taxi .taxi__banner {
+		margin-bottom: 16px;
+	}
+}
+
+section.taxi-section .taxi .taxi__banner img {
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+	section.taxi-section .taxi .taxi__banner img {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+}
+
+section.taxi-section .taxi .taxi__info {
+	background: #fff;
+	border-radius: 8px;
+	padding: 24px 48px;
+	box-shadow: 0 0 rgba(15, 45, 70, 0.1), 0 18px 39px rgba(15, 45, 70, 0.1),
+		0 283px 113px rgba(15, 45, 70, 0.01), 0 442px 124px rgba(15, 45, 70, 0);
+}
+
+@media screen and (max-width: 768px) {
+	section.taxi-section .taxi .taxi__info {
+		padding: 16px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	section.taxi-section .taxi .taxi__info {
+		align-items: center;
+		column-gap: 32px;
+		display: flex;
+	}
+}
+
+section.taxi-section .taxi .taxi__info_col1 {
+	text-align: center;
+	flex-shrink: 0;
+}
+
+section.taxi-section .taxi .taxi__info_col1 img {
+	max-width: 100%;
+}
+
+section.taxi-section .taxi .taxi__info_col2 {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}

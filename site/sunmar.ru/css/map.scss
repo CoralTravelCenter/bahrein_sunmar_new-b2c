@@ -1,0 +1,195 @@
+@media screen and (max-width: 1370px) {
+	section.map-section {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+@media (max-width: 900px) {
+	section.map-section .col2__content1 {
+		margin-top: 0 !important;
+	}
+}
+
+section.map-section .map {
+	background-color: #eef3ff;
+	padding-block: 2.5em;
+	border-radius: 1em;
+	grid-template: 1fr / repeat(2, 1fr);
+	display: grid;
+}
+@media screen and (max-width: 768px) {
+	section.map-section .map {
+		grid-template: repeat(2, auto) / 1fr;
+		padding-top: 0;
+	}
+}
+section.map-section .map .col1 .map__svgWrapper {
+	justify-content: center;
+	display: flex;
+}
+section.map-section .map .col1 .map__svgWrapper svg {
+	width: 100%;
+	max-width: 451px;
+	height: auto;
+}
+@media (max-width: 768px) {
+	section.map-section .map .col1 .map__svgWrapper svg {
+		max-width: 700px;
+	}
+}
+@media (max-width: 900px) and (min-width: 767px) {
+	section.map-section .map .col1 .map__svgWrapper svg {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 768px) {
+	section.map-section .map .col1 .map__svgWrapper {
+		margin-top: 0;
+	}
+	section.map-section .map .col1 .map__svgWrapper svg {
+		width: 100%;
+		height: auto;
+	}
+}
+section.map-section .map .js-anima {
+	-webkit-transform-origin: bottom;
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transition: all 0.3s;
+	-webkit-animation: 1s linear forwards iconappear;
+	animation: 1s linear forwards iconappear;
+}
+@-webkit-keyframes iconappear {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	25% {
+		-webkit-transform: rotate(-15deg);
+		transform: rotate(-15deg);
+	}
+	50% {
+		-webkit-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+	75% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+@keyframes iconappear {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	25% {
+		-webkit-transform: rotate(-15deg);
+		transform: rotate(-15deg);
+	}
+	50% {
+		-webkit-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+	75% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+section.map-section .map .col2 .temperatures {
+	border-bottom: 1px solid #0e2855;
+	column-gap: 3em;
+	margin-right: 0.8em;
+	padding: 2em 0 1.25em;
+	display: flex;
+}
+@media (max-width: 340px) {
+	section.map-section .map .col2 .temperatures {
+		flex-direction: column;
+		row-gap: 2em;
+	}
+}
+section.map-section .map .col2 .temperatures .tempCol {
+	align-items: start;
+	column-gap: 1em;
+	display: flex;
+}
+section.map-section .map .col2 .temperatures .tempCol svg {
+	width: 48px;
+	margin-top: 4px;
+}
+@media (max-width: 800px) and (min-width: 767px) {
+	section.map-section .map .col2 .temperatures .tempCol svg {
+		width: 44px;
+	}
+}
+section.map-section .map .col2 .temperatures .tempCol__text_small {
+	color: #0e2855;
+	font-size: 0.875em;
+	font-weight: 300;
+	line-height: 0.5;
+}
+section.map-section .map .col2 .temperatures .tempCol__text_big {
+	color: #0e2855;
+	font-size: 1.75em;
+	font-weight: 700;
+	line-height: 0.5;
+}
+@media screen and (max-width: 768px) {
+	section.map-section .map .col2 .temperatures .tempCol__text_big {
+		font-size: 1.5em;
+	}
+}
+section.map-section .map .col2 .temperatures .temperatures__col1,
+section.map-section .map .col2 .temperatures .temperatures__col2 {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+section.map-section .map .col2 .temperatures .temperatures__col3 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+@media (max-width: 800px) {
+	section.map-section .map .col2 .temperatures .temperatures__col3 {
+		display: none;
+	}
+}
+.js-tooltip {
+	display: none;
+}
+
+section.map-section .map .col1 .map__svgWrapper[data-map-mobile] {
+	display: none;
+	@media (max-width: 768px) {
+		display: flex;
+	}
+}
+
+section.map-section .map .col1 .map__svgWrapper[data-map-desktop] {
+	display: flex;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+section.map-section > article .contenu {
+	.map .col {
+		padding: 1em;
+
+		> div {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+
+		.temperatures {
+			margin: 0;
+		}
+	}
+
+	.map .col2 {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+}

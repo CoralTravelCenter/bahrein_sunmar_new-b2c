@@ -1,0 +1,22 @@
+{
+	env: {
+		brand: 'sunmar-next',
+		cmsWidgetContainer: '<div>{{{ widget_markup }}}</div>',
+		cdnAssetsURL: '//b2ccdn.sunmar.ru/content/landing-pages/<название корневой папки>',
+	},
+	contents: [
+		'/site/sunmar.ru/markup/global.html',
+		'/site/sunmar.ru/markup/main.html',
+		'/site/sunmar.ru/markup/hero-text.html',
+		'/site/sunmar.ru/markup/map.html',
+		'/site/sunmar.ru/markup/visa-section.html',
+		'/site/sunmar.ru/markup/banner.html',
+		'/site/sunmar.ru/markup/toknow.html',
+		'/site/sunmar.ru/markup/kovid.html',
+		'/site/sunmar.ru/markup/culture.html',
+		'/site/sunmar.ru/markup/taxi.html',
+		'/site/sunmar.ru/markup/entertainment.html',
+		'/site/sunmar.ru/markup/shop.html',
+		'/site/sunmar.ru/markup/food-section.html',
+	],
+}

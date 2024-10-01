@@ -1,0 +1,15 @@
+section.shop-section .shop {
+	grid-template: 1fr / repeat(2, 1fr);
+	gap: 36px 24px;
+	display: grid;
+	margin-top: 40px !important;
+}
+@media (max-width: 767px) {
+	section.shop-section .shop {
+		grid-template: repeat(2, auto) / 1fr;
+	}
+}
+section.shop-section .shop-col__title {
+	border-bottom: 1px solid #0e2855;
+	margin-bottom: 24px;
+}
